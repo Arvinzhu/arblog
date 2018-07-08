@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /hero.png
-actionText: 快速上手 →
-actionLink: /zh/guide/
+heroImage: /logo.png
+actionText: 快速浏览 →
+actionLink: /blog/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -13,9 +13,20 @@ features:
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
-# ar blog
+# Who am I
 
-## first title
+### 一个小码农
+
+``` bash
+# enail
+email: arvinzhujun@gmail.com 
+
+# location
+guangzhou,China
+
+# description
+demo
+```
 
 
 

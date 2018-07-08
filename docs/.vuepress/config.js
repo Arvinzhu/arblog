@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Ar Blog',
-  description: 'Just a blog',
+  description: 'Just personal blog',
   head: [
     ['link',{rel: 'icon', href: '/favicon.ico'}]
   ],
@@ -23,13 +23,8 @@ module.exports = {
           { text: 'java', link: '/java/' }
         ] 
       },
-      {
-        text: 'tools',
-        items:[
-          { text: 'tool', link: '/tools/'}
-        ]
-      },
-      { text: 'Github', link: 'https://www.github.com/' }
+      { text: 'tools', link: '/tools/' },
+      { text: 'Github', link: 'https://github.com/Arvinzhu' }
     ],
     sidebar: {
 	    '/blog/': [
