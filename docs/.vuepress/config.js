@@ -4,40 +4,71 @@ module.exports = {
   head: [
     ['link',{rel: 'icon', href: '/favicon.ico'}]
   ],
+  port: 18080,
   base: '/',
+  dest: './dist',
   search: true,
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog/' },
       { text: 'Frontend',
         items: [
           { text: 'css', link: '/css/' },
-          { text: 'vue', link: '/vue/' },
-          { text: 'react', link: '/react/' }
+          { text: 'vue', link: '/vue/' }
         ] 
+      },
+      { text: 'Backend',
+        items: [
+          { text: 'java', link: '/java/' }
+        ] 
+      },
+      {
+        text: 'tools',
+        items:[
+          { text: 'tool', link: '/tools/'}
+        ]
       },
       { text: 'Github', link: 'https://www.github.com/' }
     ],
-    sidebar: [
-	{
-         title: ' css',
-	 collapsable: true,
-         children: [
-	  '/css/demo',
-          '/css/dem2'
-	 ]
-        },
-	{
-         title: ' vue',
-	 collapsable: true,
-         children: [
-	  '/vue/demo',
-          '/vue/dem2'
-	 ]
-        }
-    ]
+    sidebar: {
+	    '/blog/': [
+        '',
+        'git',
+        'vuepress'
+      ],
+      '/java/': [
+        '',
+      ],
+      '/tools/': [
+        '',
+      ],
+      '/css/': [
+        '',
+      ],
+      '/vue/': [
+        '',
+      ],
+      '/react/': [
+        '',
+      ]
+    }
   },
   sidebarDepth: 2,
   lastUpdated: 'Last Updated',
   serviceWorker: true
+}
+
+function genSidebarConfig (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'git',
+        'vuepress'
+      ]
+    }
+  ]
 }
