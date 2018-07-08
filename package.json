@@ -4,6 +4,13 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
     "vuepress": "^0.11.0"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.3",
+    "vue": "^2.5.16"
   }
 }

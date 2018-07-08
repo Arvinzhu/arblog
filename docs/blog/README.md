@@ -13,3 +13,24 @@ items:
     img: http://i4.bvimg.com/652852/ba26ec9edd0741e3.jpg
 ---
 # BlogList
+
+## demoComponent
+<DemoComponent />
+
+## todo-list
+<TodoList/>
+
+## test
+
+
+
+```md
+    ::: v-pre
+      `{{ This will be displayed as-is }}`
+    :::
+```
+
+**Output**
+::: v-pre
+  `{{ This will be displayed as-is }}`
+:::
